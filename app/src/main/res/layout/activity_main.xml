@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <SearchView
+        android:id="@+id/ArtistSearchView"
+        android:layout_width="306dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Artist search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <SearchView
+        android:id="@+id/TrackSearchView"
+        android:layout_width="306dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="176dp"
+        android:gravity="center"
+        android:iconifiedByDefault="false"
+        android:queryHint="Track search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+
+    <Spinner
+        android:id="@+id/spinnerTrack"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TrackSearchView" />
+
+    <Spinner
+        android:id="@+id/spinnerArtist"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ArtistSearchView" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Recommendation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
