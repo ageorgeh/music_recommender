@@ -32,10 +32,6 @@
             android:id="@+id/trackCover"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-        <!--            android:layout_alignParentTop="true"-->
-        <!--            android:layout_alignParentEnd="true"/>-->
-        <!--            android:layout_marginTop="9dp"-->
-        <!--            android:layout_marginEnd="11dp" />-->
 
 
     </androidx.cardview.widget.CardView>
